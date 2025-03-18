@@ -3,14 +3,10 @@
 import sys
 
 array =[]
-print(sys.argv)
 if len(sys.argv) == 3:
-    if sys.argv[1] < sys.argv[2]:
-        for i in range(int(sys.argv[1]), int(sys.argv[2])+1):
-            array.append(i)
-    else:
-        for i in range(int(sys.argv[1]), int(sys.argv[2])-1, -1):
-            array.append(i)
+    direction = 1 if sys.argv[1] < sys.argv[2] else -1
+    for i in range(int(sys.argv[1]), int(sys.argv[2])+direction, direction):
+        array.append(i)
     print(array)
 else:
     print("none")
