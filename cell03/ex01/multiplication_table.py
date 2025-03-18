@@ -4,6 +4,5 @@ print("Enter a number")
 number = int(input())
 multipler = 0
 
-while multipler < 10:
-    print(f'{multipler} x {number} = {multipler*number}')
-    multipler += 1
+for multiplier in range(10):
+    print(f'{multiplier} x {number} = {multiplier*number}')
