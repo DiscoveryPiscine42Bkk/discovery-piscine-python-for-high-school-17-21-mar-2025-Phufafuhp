@@ -25,16 +25,6 @@ def checkmate(board):
     #Checks if the board is a square
     if len(chess_map) != squares/len(chess_map):
         return print("How did you fuck up a square? This is pre-school geometry!")
-    
-    #Searches for enemy pieces
-    # y_index = 0
-    # for y in chess_map:
-    #     x_index = 0
-    #     for x in y:
-    #         if x != 'K' and x != '.':
-    #             print(f"{x} found at [{y_index}][{x_index}]!")
-    #         x_index += 1
-    #     y_index += 1
 
     #Searches for the king
     king_counter = 0
