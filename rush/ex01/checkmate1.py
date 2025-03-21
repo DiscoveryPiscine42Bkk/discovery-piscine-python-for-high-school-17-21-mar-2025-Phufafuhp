@@ -2,6 +2,7 @@
 
 def checkmate(chess_map, king_y_index, king_x_index, color):
     from pieces import piece_dict
+    from check import check
     
     def produce_danger_squares(chess_map, y_index, x_index, color):
 

@@ -2,7 +2,7 @@
 
 def checkmate(board):
     if type(board) != str:
-        return print("Are you fucking with me?")
+        return print("Err: Are you fucking with me?")
 
     #Turns the string into a two-dimensional array
     chess_map = []
@@ -20,11 +20,11 @@ def checkmate(board):
 
     #Checks if there's a board *at all*
     if not chess_map[0]:
-        return print("Where's the board? You didn't give me shit!")
+        return print("Err: Where's the board? You didn't give me shit!")
     
     #Checks if the board is a square
     if len(chess_map) != squares/len(chess_map):
-        return print("How did you fuck up a square? This is pre-school geometry!")
+        return print("Err: How did you fuck up a square? This is pre-school geometry!")
 
     #Searches for the king
     king_counter = 0
@@ -41,9 +41,9 @@ def checkmate(board):
     
     #Checks if there's only one king
     if king_counter > 1:
-        return print("You're giving me more than I can work with, bud. Chill it with the kings.")
+        return print("Err: You're giving me more than I can work with, bud. Chill it with the kings.")
     elif king_counter == 0:
-        return print("Did you commit regicide? Where the hell is the king?")
+        return print("Err: Did you commit regicide? Where the hell is the king?")
     
     #Searches for pawns
     # print("Searching for pawns...")
@@ -129,38 +129,3 @@ def checkmate(board):
 
     print("Failure")
     
-
-
-# DELETE THIS LATER
-# def display_array_board():
-#     if array_board(board) != -1:
-#         for x in array_board(board):
-#             print(x)
-#     else:
-#         print("Error! Invalid chess board!")
-    
-# def find_enemy_piece(arr):
-#     pass
-
-# def find_king(arr):
-    
-#     if king_counter == 1:
-#         #Search upward
-#         for i in range(0,len(chess_row)):
-#             pass
-#         return y_position, x_position     
-#     else: 
-#         return -1
-
-# def pawn_moves(position):
-#     print(f"I work and my position in the array is [{position[0]}][{position[1]}]")
-
-# seperator = "\n---------------------------------------------------------------------------------\n"
-
-# checkmate(board)
-# print(seperator)
-# display_array_board()
-# print(seperator)
-# print(find_king(array_board(board)))
-# find_enemy_piece(array_board(board))
-# pawn_moves(find_king(array_board(board)))
